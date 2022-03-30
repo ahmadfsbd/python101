@@ -35,6 +35,9 @@ def parse_arguments():
     +: like *, but requiring at least one value
     argparse.REMAINDER: all the values that are remaining in the command line
     """
+    # Type can also be defined
+    # my_parser.add_argument('--input', action='store', type=int, nargs=3)
+
 
     # Execute the parse_args() method
     args, unknown = parser.parse_known_args()
