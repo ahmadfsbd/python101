@@ -32,3 +32,31 @@ def sort_key(company):
 # Pass the function to sort() function
 companies.sort(key=sort_key, reverse=True)
 print(companies)
+
+# Slicing a list (same as string slicing)
+print(companies[0:2:1])
+
+# Unpacking Lists
+apple, google, facebook = companies
+print("Unpacked list element google = {}".format(google))
+# Assign remaining elements as new list to others variable
+apple, *others = companies
+print("Others List:" + str(others))
+
+# iterate over a List
+for item in companies:
+    print(item)
+
+# Find index of an element
+cities = ['New York', 'Beijing', 'Cairo', 'Mumbai', 'Mexico']
+city = 'Mexico'
+print("index of Mexico: " + str(cities.index(city)))
+
+for city in cities:
+    result = cities.index(city)
+    print(f"The {city} has an index of {result}.")
+
+# Usin range to iterate
+length = len(cities)
+for i in range(0, length, 2):
+    print(f"At index {i} : {cities[i]}")
