@@ -60,3 +60,25 @@ for city in cities:
 length = len(cities)
 for i in range(0, length, 2):
     print(f"At index {i} : {cities[i]}")
+
+# List comprehension
+'''
+The shorter way of writing a for loop that builds a list.
+
+The normal way is:
+
+numbers = [1,2,3,4]
+result = []
+
+for x in numbers:
+    if x % 2 == 0:
+        result.append(x)
+'''
+
+result = [x for x in numbers if x % 2 == 0]
+
+'''
+[x        for x in numbers if x % 2 == 0]
+ ↑             ↑            ↑
+value      loop source   condition
+'''
