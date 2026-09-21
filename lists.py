@@ -16,6 +16,8 @@ print(lname)
 popped = lname.pop(0)
 print(lname)
 print("The name {} was popped from list.".format(popped))
+# insert bob at index 0
+lname.insert(0, 'bob')
 
 # sort list in place
 scores = [5, 7, 4, 6, 9, 8]
